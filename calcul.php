@@ -34,6 +34,6 @@ function result($op,$op1,$op2){
 }
 
 ?>
-<h1 class="position-absolute top-50 start-50 translate-middle"><?php echo $op1.' '.$action.' ' .$op2. ' = '.result($action,$op1,$op2) ?></h1>
+<h1 ><?php echo $op1.' '.$action.' ' .$op2. ' = '.result($action,$op1,$op2) ?></h1>
 <?php
 end_page();
