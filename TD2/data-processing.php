@@ -14,7 +14,7 @@ if ($action == 'mailer') {
 
 
 
-    mail($to, $subject, $message,$header);
+    mail($to, $subject, $message);
 }
 else{
     echo '<br/><strong>Bouton non géré !</strong><br/>';
