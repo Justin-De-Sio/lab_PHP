@@ -8,7 +8,7 @@ if ($action == 'mailer') {
     $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
     $message .= 'Email : ' . $email . PHP_EOL;
     $message .= 'Mot de passe : ' . PHP_EOL . $password;
-    $header = $email;
+
     $to      =  'desio.j@live.fr';
     $subject = 'le sujet';
 
@@ -20,7 +20,7 @@ else{
     echo '<br/><strong>Bouton non géré !</strong><br/>';
 }
 ?>
-
+<p><a href="index.php">TD2</a></p>
 
 <?php
 end_page();

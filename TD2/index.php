@@ -11,7 +11,14 @@ start_page('formulaire');
     </div>
     <div>
         <label for="Sexe">Civilité :</label>
-        <input id="Sexe" name="user_sexe">
+        <select name="user_sexe" id="Sexe">
+            <option value="">--Please choose an option--</option>
+            <option value="Homme">Homme</option>
+            <option value="Femmme">Femmme</option>
+            <option value="Chaise">Chaise</option>
+        </select>
+
+
     </div>
     <div>
         <label for="email">e-mail:</label>
