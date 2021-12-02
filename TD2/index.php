@@ -1,6 +1,5 @@
 <?php
 include 'utils.inc.php';
-require 'data-processing.php';
 start_page('formulaire');
 ?>
 
@@ -50,5 +49,6 @@ start_page('formulaire');
 </form>
 
 <?php
+require 'data-processing.php';
 end_page();
 ?>

@@ -5,7 +5,6 @@ $action = $_POST['action'];
 $email = $_POST['user_email'];
 $password = $_POST['user_password'];
 if(!empty( $_POST['action'])){
-
     if ($action == 'mailer') {
         $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
         $message .= 'Email : ' . $email . PHP_EOL;
