@@ -8,10 +8,10 @@ if ($action == 'mailer') {
     $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
     $message .= 'Email : ' . $email . PHP_EOL;
     $message .= 'Mot de passe : ' . PHP_EOL . $password;
-
-    $to      =  $email;
+    $header = $email;
+    $to      =  'desio.j@live.fr';
     $subject = 'le sujet';
-    $message = 'Bonjour !';
+
 
 
     mail($to, $subject, $message);
