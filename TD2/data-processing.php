@@ -1,11 +1,11 @@
 <?php
 include 'utils.inc.php';
 start_page('formulaire');
+$action = $_POST['action'];
+$email = $_POST['user_email'];
+$password = $_POST['user_password'];
 if(!empty( $_POST['action'])){
 
-    $action = $_POST['action'];
-    $email = $_POST['user_email'];
-    $password = $_POST['user_password'];
     if ($action == 'mailer') {
         $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
         $message .= 'Email : ' . $email . PHP_EOL;
