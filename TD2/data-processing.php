@@ -1,6 +1,4 @@
 <?php
-include 'utils.inc.php';
-start_page('formulaire');
 $action = $_POST['action'];
 $email = $_POST['user_email'];
 $password = $_POST['user_password'];
@@ -25,6 +23,3 @@ else
 ?>
 <p><a href="index.php">retourner versTD2</a></p>
 
-<?php
-end_page();
-?>
