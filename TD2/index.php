@@ -14,12 +14,12 @@ start_page('formulaire');
         <input id="Sexe" name="user_sexe">
     </div>
     <div>
-        <label for="mail">e-mail:</label>
-        <input type="text" id="mail" name="user_mail">
+        <label for="email">e-mail:</label>
+        <input type="text" id="email" name="user_email">
     </div>
     <div>
         <label for="Mot de passe">Mot de passe</label>
-        <input type="password" id="Mot de passe" name="user_password">
+        <input type="text" id="Mot de passe" name="user_password">
     </div>
     <div>
         <label for="Verification de Mot de passe">Vérification de Mot de passe</label>
@@ -38,7 +38,7 @@ start_page('formulaire');
         <input type="checkbox" id="Conditions générales" name="cgu_check">
     </div>
     <div class="button">
-        <button type="submit">Envoyer</button>
+        <button type="submit" value="mailer" name="action">action</button>
     </div>
 </form>
 
