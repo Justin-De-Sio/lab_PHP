@@ -21,6 +21,8 @@ if(!empty( $_POST['action'])){
     }
 
 }
+else
+    echo 'ok';
 ?>
 <p><a href="index.php">retourner versTD2</a></p>
 
