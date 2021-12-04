@@ -6,6 +6,7 @@ start_page('Sommaire');
 <ul>
     <li><a href="TD1/index.php">TD1</a></li>
     <li><a href="TD2/index.php">TD2</a></li>
+    <li>test</li>
 </ul>
 <?php
 end_page();
