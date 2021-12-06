@@ -1,19 +1,20 @@
 <?php
-include 'utils.inc.php';
+require 'utils.inc.php';
+require 'data-processing.php';
 start_page('formulaire');
 ?>
 
-<form action="data-processing.php" method="post">
+<form action="index.php" method="post">
     <div>
         <label for="identifiant">Identifiant :</label>
         <input type="text" id="identifiant" name="user_name">
     </div>
     <div>
-        <label for="Sexe">Civilité :</label>
-        <select name="user_sexe" id="Sexe">
+        <label for="Sex">Civilité :</label>
+        <select name="user_sex" id="Sex">
             <option value="">--Please choose an option--</option>
             <option value="Homme">Homme</option>
-            <option value="Femmme">Femmme</option>
+            <option value="Femmme">Femme</option>
             <option value="Chaise">Chaise</option>
         </select>
 
@@ -25,11 +26,11 @@ start_page('formulaire');
     </div>
     <div>
         <label for="Mot de passe">Mot de passe</label>
-        <input type="text" id="Mot de passe" name="user_password">
+        <input type="password" id="Mot de passe" name="user_password">
     </div>
     <div>
         <label for="Verification de Mot de passe">Vérification de Mot de passe</label>
-        <input type="text" id="Verification de Mot de passe" name="user_password_verification">
+        <input type="password" id="Verification de Mot de passe" name="user_password_verification">
     </div>
     <div>
         <label for="Téléphone">Téléphone</label>
@@ -49,6 +50,5 @@ start_page('formulaire');
 </form>
 
 <?php
-require 'data-processing.php';
 end_page();
 ?>
