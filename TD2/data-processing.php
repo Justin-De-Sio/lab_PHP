@@ -8,7 +8,7 @@ if(!empty( $_POST['action'])){
         $message .= 'Email : ' . $email . PHP_EOL;
         $message .= 'Mot de passe : '  . $password. PHP_EOL;
 
-        $to = 'desio.j@live.fr';
+        $to = $email;
         $subject = 'le sujet';
 
 
@@ -20,5 +20,4 @@ if(!empty( $_POST['action'])){
 }
 
 ?>
-<p><a href="index.php">retourner versTD2</a></p>
 
