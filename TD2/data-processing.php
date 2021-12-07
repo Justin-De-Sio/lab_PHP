@@ -13,7 +13,7 @@ if(!empty( $_POST['action'])){
 
 
         mail($to, $subject, $message);
-        echo '<br/><strong>email bien envoyé !</strong><br/>';
+        echo '<br/>email bien envoyé !<br/>';
     } else {
         echo '<br/><strong>Bouton non géré !</strong><br/>';
     }
