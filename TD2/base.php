@@ -1,5 +1,5 @@
 <?php
-$dbLink = mysqli_connect('mysql-superjustin.alwaysdata.net', '250372', 'lol1234567890lol!')
+$dbLink = mysqli_connect('mysql-superjustin.alwaysdata.net', '250372', 'lol1234567890lol')
 or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
 ?>
     Sélectionnez ensuite votre base de données :
