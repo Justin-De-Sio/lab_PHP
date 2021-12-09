@@ -14,7 +14,8 @@ or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
 
 ?>
 <?php
-$query = 'SELECT id, email, date FROM user';
+$query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( '$today',
+     '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
 ?>
 
 <?php

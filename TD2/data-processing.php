@@ -21,9 +21,8 @@ if (!empty($_POST)) {
         mail($to, $subject, $message);
         echo '<br/>email bien envoyé !<br/>';
         $today = date('Y-m-d');
-        $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( '$today',
-     '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
-        echo $query;
+
+        require 'base.php';
     } else {
         echo '<br/><strong>Bouton non géré !</strong><br/>';
     }
