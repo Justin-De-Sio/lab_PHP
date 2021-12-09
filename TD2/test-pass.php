@@ -7,7 +7,6 @@ if (!empty($_POST)) {
 
     if ($action == 'connection') {
         $query = "SELECT ID, PASSWORD FROM user WHERE ID='$login'AND PASSWORD='$password'";
-        echo $query;
         $dbResult = connectDB($query);
         $dbRow = mysqli_fetch_assoc($dbResult);
         if (!empty($dbRow)) {
@@ -19,6 +18,7 @@ if (!empty($_POST)) {
             exit;
         }
         else{
+            start_page('erreur');
             echo '<strong>logging ou mot de passe incorrect</strong>';
         }
     }
