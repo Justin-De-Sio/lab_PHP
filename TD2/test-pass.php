@@ -6,17 +6,16 @@ if (!empty($_POST)) {
     $action = $_POST['action'];
 
     if ($action == 'connection') {
-        $query = "SELECT ID, PASSWORD FROM user ";
+        $query = 'SELECT ID, PASSWORD FROM user WHERE ID='. $password . 'AND PASSWORD='.$password;
 
         $dbResult = connectDB($query);
-        while ($dbRow = mysqli_fetch_assoc($dbResult)) {
-                echo 'e';
-            if ($dbRow['id']==$login && $dbRow['password']=$password){
-                echo 'pkl';
-                header('welcome.php');
-            }
-
+        $dbRow = mysqli_fetch_assoc($dbResult);
+        if (empty($dbRow)){
+            header('Location : welcome.php');
         }
+
+
+
     }
 }
 
