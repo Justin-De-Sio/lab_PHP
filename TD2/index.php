@@ -6,8 +6,8 @@ start_page('formulaire');
 
 <form action="index.php" method="post">
     <div>
-        <label for="identifiant">Identifiant :</label>
-        <input type="text" id="identifiant" name="user_name">
+        <label for="id">Identifiant :</label>
+        <input type="text" id="id" name="user_name">
     </div>
     <div>
         <label for="Sex">Civilité :</label>
@@ -25,19 +25,19 @@ start_page('formulaire');
         <input type="text" id="email" name="user_email">
     </div>
     <div>
-        <label for="Mot de passe">Mot de passe</label>
-        <input type="password" id="Mot de passe" name="user_password">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="user_password">
     </div>
     <div>
-        <label for="Verification de Mot de passe">Vérification de Mot de passe</label>
-        <input type="password" id="Verification de Mot de passe" name="user_password_verification">
+        <label for="vPassword">Vérification de Mot de passe</label>
+        <input type="password" id="vPassword" name="user_password_verification">
     </div>
     <div>
-        <label for="Téléphone">Téléphone</label>
-        <input type="text" id="Téléphone" name="phone">
+        <label for="phone">Téléphone</label>
+        <input type="text" id="phone" name="phone">
     </div>
     <div>
-        <label for="Pays">Pays</label>
+        <label for="state">Pays</label>
         <?php  include 'pays.php';?>
     </div>
     <div>

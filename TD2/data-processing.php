@@ -1,4 +1,6 @@
 <?php
+require 'base.php';
+
 $action = $_POST['action'];
 $email = $_POST['user_email'];
 $password = $_POST['user_password'];
