@@ -17,7 +17,7 @@ function connectDB($query){
         exit();
     }
     else{
-        echo 'Bonjour, ' .'<br/>'.'  Votre requête a bien était envoyé, merci.';
+        echo 'Bonjour, ' .'<br/>'.'  Votre requête a bien était envoyé, merci.'.'<br/>';
     }
     return $dbResult;
 }

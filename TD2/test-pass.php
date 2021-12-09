@@ -19,7 +19,7 @@ if (!empty($_POST)) {
             exit;
         }
         else{
-            echo 'login ou mot de passe incorrect';
+            echo '<strong>logging ou mot de passe incorrect</strong>';
         }
     }
 }
