@@ -25,10 +25,11 @@ if (!empty($_POST)) {
         '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
         connectDB($query);
 
+
     } else {
         echo '<br/><strong>Bouton non géré !</strong><br/>';
     }
-
+    $_POST = array();
 
 }
 
