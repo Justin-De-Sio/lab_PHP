@@ -10,9 +10,9 @@ if (!empty($_POST)) {
         echo $query;
         $dbResult = connectDB($query);
         $dbRow = mysqli_fetch_assoc($dbResult);
-        if (empty($dbRow)){
+       /* if (empty($dbRow)){
             header('Location : welcome.php');
-        }
+        }*/
 
 
 
