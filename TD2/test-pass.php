@@ -10,9 +10,14 @@ if (!empty($_POST)) {
         echo $query;
         $dbResult = connectDB($query);
         $dbRow = mysqli_fetch_assoc($dbResult);
-       /* if (empty($dbRow)){
-            header('Location : welcome.php');
-        }*/
+        if (empty($dbRow)){
+            /* Redirection vers une page différente du même dossier */
+            $host  = $_SERVER['HTTP_HOST'];
+            $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+            $extra = 'welcome.php';
+            header("Location: http://$host$uri/$extra");
+            exit;
+
 
 
 
