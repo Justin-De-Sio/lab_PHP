@@ -7,7 +7,7 @@ if (!empty($_POST)) {
 
     if ($action == 'connection') {
         $query = "SELECT ID, PASSWORD FROM user WHERE ID='$login'AND PASSWORD='$password'";
-
+        echo $query;
         $dbResult = connectDB($query);
         $dbRow = mysqli_fetch_assoc($dbResult);
         if (empty($dbRow)){
