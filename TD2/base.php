@@ -16,15 +16,19 @@ function connectDB($query){
         echo 'Requête : ' . $query . '<br/>';
         exit();
     }
+    else{
+        echo 'Bonjour, Mickaël \n
+        Votre inscription a bien été enregistrée, merci.';
+    }
 }
 
 
 
 
 
-/*while($dbRow = mysqli_fetch_assoc($dbResult))
-{
-    echo $dbRow['id'] . '<br/>';
-    echo $dbRow['email'] . '<br/>';
-    echo $dbRow['date'] . '<br/>';
-    echo '<br/><br/>';*/
+//while($dbRow = mysqli_fetch_assoc($dbResult)) {
+//    echo $dbRow['id'] . '<br/>';
+//    echo $dbRow['email'] . '<br/>';
+//    echo date('d.m.Y', strtotime($dbRow['date'])) . '<br/>';
+//    echo '<br/><br/>';
+//}
