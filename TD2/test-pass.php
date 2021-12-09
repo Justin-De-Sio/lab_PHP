@@ -18,5 +18,8 @@ if (!empty($_POST)) {
             header("Location: http://$host$uri/$extra");
             exit;
         }
+        else{
+            echo 'login ou mot de passe incorrect';
+        }
     }
 }
