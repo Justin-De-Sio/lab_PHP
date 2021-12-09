@@ -4,7 +4,7 @@ or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
 ?>
     Sélectionnez ensuite votre base de données :
 <?php
-$query='SELECT * FROM `user` ';
+$query="SELECT * FROM `user` ";
 
 mysqli_select_db($dbLink , 'superjustin_td_php	')
 or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
