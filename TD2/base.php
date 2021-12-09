@@ -1,6 +1,6 @@
 <?php
 $dbLink = mysqli_connect('mysql-superjustin.alwaysdata.net', '250372', 'U1234567890U',
-    'superjustin_td_php	')
+    'superjustin_td_php')
 or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
 ?>
 
