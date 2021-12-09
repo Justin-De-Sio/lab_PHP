@@ -6,7 +6,7 @@ if (!empty($_POST)) {
     $action = $_POST['action'];
 
     if ($action == 'connection') {
-        $query = "SELECT ID, PASSWORD FROM USER ";
+        $query = "SELECT ID, PASSWORD FROM user ";
          connectDB($query);
     }
 }
