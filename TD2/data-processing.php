@@ -30,8 +30,8 @@ if (!empty($_POST)) {
         or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
         );
 
-        $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( '$today',
-     '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
+        $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( '". $today . "',
+         '".$email."', '".$id."' , '".$state."' , '".$password."' , '".$phone."' ,'".$sex."' )";
 
 
         if(!($dbResult = mysqli_query($dbLink, $query)))
