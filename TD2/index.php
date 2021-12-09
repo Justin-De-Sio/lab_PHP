@@ -15,7 +15,6 @@ start_page('formulaire');
             <option value="">--Please choose an option--</option>
             <option value="Homme">Homme</option>
             <option value="Femmme">Femme</option>
-            <option value="Chaise">Chaise</option>
         </select>
 
 
