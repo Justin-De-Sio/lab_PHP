@@ -17,8 +17,7 @@ function connectDB($query){
         exit();
     }
     else{
-        echo 'Bonjour, Mickaël \n
-        Votre inscription a bien été enregistrée, merci.';
+        echo 'Bonjour, Mickaël' .'<br/>'.'  Votre inscription a bien été enregistrée, merci.';
     }
 }
 

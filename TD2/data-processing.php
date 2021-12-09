@@ -20,8 +20,8 @@ if (!empty($_POST)) {
 
         mail($to, $subject, $message);
         echo '<br/>email bien envoyé !<br/>';
-        $today = date('Y-m-d');
-        $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( '$today',
+
+        $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( 'NOW()',
         '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
         connectDB($query);
 
