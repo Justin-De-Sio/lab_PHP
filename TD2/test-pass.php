@@ -11,7 +11,7 @@ if (!empty($_POST)) {
 
         while ($dbRow = mysqli_fetch_assoc($dbResult = connectDB($query))) {
             if ($dbRow['id']==$login && $dbRow['password']=$password){
-
+                header('welcome.php');
             }
 
         }
