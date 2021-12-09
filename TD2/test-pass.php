@@ -10,7 +10,7 @@ if (!empty($_POST)) {
 
         $dbResult = connectDB($query);
         while ($dbRow = mysqli_fetch_assoc($dbResult)) {
-
+                echo 'e';
             if ($dbRow['id']==$login && $dbRow['password']=$password){
                 echo 'pkl';
                 header('welcome.php');
