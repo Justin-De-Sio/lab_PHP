@@ -1,5 +1,5 @@
 <?php
-include 'TD2/utils.inc.php';
+require 'TD2/utils.inc.php';
 start_page('Sommaire');
 ?>
 <h1>Sommaire</h1>
