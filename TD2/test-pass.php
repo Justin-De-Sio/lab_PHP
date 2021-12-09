@@ -8,8 +8,8 @@ if (!empty($_POST)) {
     if ($action == 'connection') {
         $query = "SELECT ID, PASSWORD FROM user ";
 
-
-        while ($dbRow = mysqli_fetch_assoc($dbResult = connectDB($query))) {
+        $dbResult = connectDB($query);
+        while ($dbRow = mysqli_fetch_assoc($dbResult)) {
             if ($dbRow['id']==$login && $dbRow['password']=$password){
                 header('welcome.php');
             }
