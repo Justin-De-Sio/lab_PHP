@@ -7,7 +7,14 @@ if (!empty($_POST)) {
 
     if ($action == 'connection') {
         $query = "SELECT ID, PASSWORD FROM user ";
-         connectDB($query);
+
+
+        while ($dbRow = mysqli_fetch_assoc($dbResult = connectDB($query))) {
+            if ($dbRow['id']==$login && $dbRow['password']=$password){
+
+            }
+
+        }
     }
 }
 
