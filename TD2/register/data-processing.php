@@ -29,7 +29,7 @@ if (!empty($_POST)) {
         connectDB($query);
     } elseif ($action == 'rec') {
         $file = 'data.txt';
-        if (!($file = open($file, 'a+'))) {
+        if (!($file = fopen($file, 'a+'))) {
             echo 'Erreur de lecture   ';
             exit();
         }
