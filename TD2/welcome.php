@@ -1,5 +1,6 @@
 <?php
-require '../utils.inc.php';
-start_page('welcome page');
-echo '<h1>Bienvenue !</h1>';
+session_start();
+if (isset($_SESSION['suid'])) {
+    echo "L'authentification est validée";
+}
 end_page();
