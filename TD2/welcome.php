@@ -1,14 +1,16 @@
 <?php
+session_start();
 require '../utils.inc.php';
 start_page('session');
 
-session_start();
 if(!isset($_SESSION['suid']))
 {
+    //TODO : je n'ai pas ça
     die('Erreur d\'authentification');
 }
 else
 {
+
     echo 'bievenue';
  }
 
