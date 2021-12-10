@@ -30,7 +30,7 @@ if (!empty($_POST)) {
     } elseif ($action == 'rec') {
         $file = 'data.txt';
         if (!($file = fopen($file, 'a+'))) {
-            echo 'Erreur de lecture   ';
+            echo 'Erreur d\'ouverture';
             exit();
         }
         fputs($file, 'id : ' . $id . ', email : ' . $email . PHP_EOL);
