@@ -1,5 +1,5 @@
 <?php
-require 'base.php';
+require '../TDbase.php';
 
 if (!empty($_POST)) {
     $action = $_POST['action'];
