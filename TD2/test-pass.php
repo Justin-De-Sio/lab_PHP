@@ -13,7 +13,8 @@ if (!empty($_POST)) {
         $loginBD = $dbRow['id'];
         $passwordBD = $dbRow['password'];
 
-        echo '<br>' . 'id : ' . '$login' . '<br>' . ' mdp : ' . $password;
+        echo '<br>' . 'idBD : ' . $loginBD . '<br>' . ' mdpBD : ' . $passwordBD;
+        echo '<br>' . 'idBD : ' . $login . '<br>' . ' mdp : ' . $password;
         if ($loginBD == $_POST['login'] && password_verify($_POST['password'], $passwordBD)) {
             session_start();
             $_SESSION['suid'] = session_id();
