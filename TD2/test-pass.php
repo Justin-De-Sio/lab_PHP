@@ -10,7 +10,7 @@ if (!empty($_POST)) {
         $dbAssoc = mysqli_fetch_assoc($dbResult);
         $login = $dbAssoc['id'];
         $password = $dbAssoc['password'];
-        echo $login , $password;
+
 
         if ($login == $_POST['login'] && password_verify($_POST['password'], $password)) {
             session_start();
@@ -19,6 +19,7 @@ if (!empty($_POST)) {
         } else {
             start_page('erreur');
             echo '<strong>logging ou mot de passe incorrect</strong>';
+            echo $login , $password;
         }
     }
 
