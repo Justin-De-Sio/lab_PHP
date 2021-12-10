@@ -7,12 +7,17 @@ if (!empty($_POST)) {
 
     if (!empty($_POST)) {
 
-        $query = "SELECT ID, PASSWORD FROM user WHERE ID='$login'AND PASSWORD='$password'";
+        $query = "SELECT ID, PASSWORD FROM user /*WHERE ID='$login'AND PASSWORD='$password'*/";
         $dbResult = connectDB($query);
         $dbRow = mysqli_fetch_assoc($dbResult);
         $loginBD = $dbRow['id'];
         $passwordBD = $dbRow['password'];
         echo $query;
+        while($dbRow = mysqli_fetch_assoc($dbResult)) {
+            echo $dbRow['id'] . '<br/>';
+            echo $dbRow['email'] . '<br/>';
+            echo date('d.m.Y', strtotime($dbRow['date'])) . '<br/>';
+            echo '<br/><br/>';
         echo '<br>' . 'dbRow : ' .$dbRow;
         echo '<br>' . 'idBD : ' . $loginBD . '<br>' . ' mdpBD : ' . $passwordBD;
         echo '<br>' . 'id : ' . $login . '<br>' . ' mdp : ' . $password;
