@@ -4,9 +4,9 @@ start_page('Sommaire');
 $rub1 = 'calculator';
 $rub1addr = 'TD1/calculator.php';
 
-$rub2form = 'TD2 Form';
+$rub2form = 'Form';
 $rub2formAddr = 'TD2/form.php';
-$rub2signIn = 'TD2 Sign in';
+$rub2signIn = 'Sign in';
 $rub2signInAddr = 'TD2/login.php';
 
 
