@@ -14,7 +14,7 @@ if (!empty($_POST)) {
 
     } else {
         $_SESSION['error'] = 'Identifiants incorrects, veuillez vérifier votre email et mot de passe. ';
-        header('location: index.php');
+        header('location: login.php');
     }
 
 }
