@@ -5,7 +5,7 @@ if (!empty($_POST)) {
 
 
 
-    $dbRow = mysqli_fetch_assoc($dbResult = connectDB($query = "select * from user where id='{$_POST['login']}'"));
+    $dbRow = mysqli_fetch_assoc($dbResult = connectDB($query = 'select * from user where id=\'{$_POST['login']}\''));
 
     if ($dbRow['id'] == $_POST['login'] && $_POST['password'] == $dbRow['password']) {
         session_start();
