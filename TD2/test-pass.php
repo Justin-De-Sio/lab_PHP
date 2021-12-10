@@ -22,7 +22,7 @@ if (!empty($_POST)) {
 
         } else {
 
-//                header('location: index.php');
+                header('location: index.php');
 //                echo '<strong>logging ou mot de passe incorrect</strong>';
         }
     }
