@@ -14,7 +14,7 @@ if (!empty($_POST)) {
         $loginDB = $dbRow['id'];
         $passwordDB = $dbRow['password'];
         echo '->>>>';
-        echo $login;
+        echo $loginDB;
         echo  $passwordDB ;
         if ($loginDB == $_POST['login'] && password_verify($_POST['password'], $passwordDB)) {
             session_start();
