@@ -7,7 +7,7 @@ $operateurs = '+-*/';
 ?>
 
     <h2 >calculator</h2>
-    <form action="../TD2/data-processing.php" method="post">
+    <form action="../TD2/register/data-processing.php" method="post">
         <label>
 
             <input type="number" name="op1"><br>
