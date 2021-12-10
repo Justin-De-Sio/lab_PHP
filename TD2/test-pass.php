@@ -7,6 +7,7 @@ if (!empty($_POST)) {
     $query = "SELECT ID, PASSWORD FROM user ";
     $dbResult = connectDB($query);
     $dbRow = mysqli_fetch_assoc($dbResult);
+
     while($dbRow = mysqli_fetch_assoc($dbResult)) {
         echo $dbRow['id'] . '<br/>';
         echo $dbRow['password'] . '<br/>';
