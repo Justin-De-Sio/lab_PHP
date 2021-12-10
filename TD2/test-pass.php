@@ -15,9 +15,7 @@ if (!empty($_POST)) {
         header('location: welcome.php');
 
     } else {
-
         header('location: index.php');
-//                echo '<strong>logging ou mot de passe incorrect</strong>';
     }
 
 }
