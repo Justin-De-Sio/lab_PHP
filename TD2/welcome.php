@@ -11,7 +11,7 @@ if(!isset($_SESSION['suid']))
 else
 {
 
-    echo 'bievenue';
+    echo 'bienvenue';
  }
 
 end_page();
