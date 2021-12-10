@@ -12,7 +12,7 @@ if (!empty($_POST)) {
         $dbRow = mysqli_fetch_assoc($dbResult);
         $loginBD = $dbRow['id'];
         $passwordBD = $dbRow['password'];
-        echo '<br>' . 'idBD : ' . $dbResult;
+
         echo '<br>' . 'dbRow : ' .$dbRow;
         echo '<br>' . 'idBD : ' . $loginBD . '<br>' . ' mdpBD : ' . $passwordBD;
         echo '<br>' . 'id : ' . $login . '<br>' . ' mdp : ' . $password;
