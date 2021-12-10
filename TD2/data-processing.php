@@ -27,11 +27,11 @@ if (!empty($_POST)) {
         $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( NOW(),
         '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
 
-        while ($dbRow = mysqli_fetch_assoc($dbResult=connectDB('select * from user'))) {
+        $dbRow = mysqli_fetch_assoc($dbResult=connectDB('select * from user'));
             echo $dbRow['id'] . '<br/>';
             echo $dbRow['password'] . '<br/>';
             echo '<br/><br/>';
-        }
+
 
     } else {
         echo '<br/><strong>Bouton non géré !</strong><br/>';
