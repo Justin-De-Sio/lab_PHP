@@ -10,7 +10,7 @@ if (!empty($_POST)) {
     if (!empty($_POST)) {
 
 
-        $dbRow = mysqli_fetch_assoc($dbResult = connectDB($query = 'select * from user'));
+        $dbRow = mysqli_fetch_assoc($dbResult = connectDB($query = "select * from user where id='$login'"));
         $loginDB = $dbRow['id'];
         $passwordDB = $dbRow['password'];
         echo '->>>>';
