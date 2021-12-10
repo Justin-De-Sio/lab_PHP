@@ -2,7 +2,7 @@
 require '../utils.inc.php';
 require 'test-pass.php';
 start_page('page de connection');
-echo 'erreur : '. $_SESSION['error'];
+echo $_SESSION['error'];
 ?>
 
 <form action="login.php" method="post">
