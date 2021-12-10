@@ -13,6 +13,7 @@ if (!empty($_POST)) {
         header('location: welcome.php');
 
     } else {
+        $_SESSION['error'] = 'Identifiants incorrects, veuillez vérifier votre email et mot de passe. ';
         header('location: index.php');
     }
 
