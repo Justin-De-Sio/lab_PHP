@@ -4,20 +4,21 @@ if (!empty($_POST)) {
     $login = $_POST['login'];
     $password = $_POST['password'];
 
+    $query = "SELECT ID, PASSWORD FROM user ";
+    $dbResult = connectDB($query);
+    $dbRow = mysqli_fetch_assoc($dbResult);
+    while($dbRow = mysqli_fetch_assoc($dbResult)) {
+        echo $dbRow['id'] . '<br/>';
+        echo $dbRow['password'] . '<br/>';
+        echo '<br/><br/>';
+    }
 
     if (!empty($_POST)) {
 
-        $query = "SELECT ID, PASSWORD FROM user WHERE ID='$login'AND PASSWORD='$password'";
-        $dbResult = connectDB($query);
-        $dbRow = mysqli_fetch_assoc($dbResult);
+
         $loginBD = $dbRow['id'];
         $passwordBD = $dbRow['password'];
-        echo $query;
-        while($dbRow = mysqli_fetch_assoc($dbResult)) {
-            echo $dbRow['id'] . '<br/>';
-            echo $dbRow['password'] . '<br/>';
-            echo '<br/><br/>';
-        }
+
 
         if ($loginBD == $_POST['login'] && password_verify($_POST['password'], $passwordBD)) {
             session_start();
