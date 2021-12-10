@@ -1,5 +1,5 @@
 <?php
-require '../utils.inc.php';
+require '../../utils.inc.php';
 require 'test-pass.php';
 start_page('page de connection');
 echo $_SESSION['error'];

@@ -5,9 +5,9 @@ $rub1 = 'calculator';
 $rub1addr = 'TD1/calculator.php';
 
 $rub2form = 'Form';
-$rub2formAddr = 'TD2/register/data-processing.php';
+$rub2formAddr = 'TD2/register/form.php';
 $rub2signIn = 'Sign in';
-$rub2signInAddr = 'TD2/login.php';
+$rub2signInAddr = 'TD2/login/login.php';
 
 
 ?>
