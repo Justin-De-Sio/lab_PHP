@@ -13,6 +13,7 @@ if (!empty($_POST)) {
         $dbRow = mysqli_fetch_assoc($dbResult = connectDB($query = 'select * from user'));
         $loginDB = $dbRow['id'];
         $passwordDB = $dbRow['password'];
+        echo '->>>>';
         echo $login;
         echo  $passwordDB ;
         if ($loginDB == $_POST['login'] && password_verify($_POST['password'], $passwordDB)) {
@@ -22,7 +23,7 @@ if (!empty($_POST)) {
 
         } else {
 
-                header('location: index.php');
+//                header('location: index.php');
 //                echo '<strong>logging ou mot de passe incorrect</strong>';
         }
     }
