@@ -12,7 +12,7 @@ if (!empty($_POST)) {
         $dbRow = mysqli_fetch_assoc($dbResult);
 
 
-        echo '<br>' . 'id :' . '$login' . '<br>' . ' mdp : ' . $password;
+        echo '<br>' . 'id : ' . '$login' . '<br>' . ' mdp : ' . $password;
         if ($login == $_POST['login'] && password_verify($_POST['pwd'], $password)) {
             session_start();
             $_SESSION['suid'] = session_id();
