@@ -20,6 +20,13 @@ if (!empty($_POST)) {
             start_page('erreur');
             echo "<strong>logging ou mot de passe incorrect</strong> , '$login' , '$password','$dbAssoc '";
             var_dump($dbResult);
+            if (mysqli_num_rows($dbResult) != 0)
+            {
+                while ($row = mysqli_fetch_assoc($dbResult))
+                {
+                    echo $row['username'];
+                }
+            }
 
         }
     }
