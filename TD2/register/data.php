@@ -1,5 +1,5 @@
 <?php
-require '../utils.inc.php';
+require '../../utils.inc.php';
 start_page('data');
 
 $file = 'data.txt';
