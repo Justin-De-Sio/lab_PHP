@@ -45,7 +45,7 @@ start_page('formulaire');
     </div>
     <div class="button">
         <button type="submit" value="mailer" name="action">action</button>
-        <button type="submit" value="rec" name="action">action</button>
+        <button type="submit" value="rec" name="action">action2</button>
     </div>
 </form>
 

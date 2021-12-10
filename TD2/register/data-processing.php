@@ -27,12 +27,17 @@ if (!empty($_POST)) {
         $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( NOW(),
         '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
         connectDB($query);
-
-
+    } elseif ($action == 'rec') {
+        $file = 'data.txt';
+        if (!($file = open($file, 'a+'))) {
+            echo 'Erreur de lecture   ';
+            exit();
+        }
+        fputs($file, 'id : ' . $id . ', email : ' . $email . PHP_EOL);
+        fclose($file);
     } else {
         echo '<br/><strong>Bouton non géré !</strong><br/>';
     }
-
 
 }
 
