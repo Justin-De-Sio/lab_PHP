@@ -31,7 +31,7 @@ if (!empty($_POST)) {
             echo $dbRow['id'] . '<br/>';
             echo $dbRow['password'] . '<br/>';
             echo '<br/><br/>';
-        }
+
 
     } else {
         echo '<br/><strong>Bouton non géré !</strong><br/>';
