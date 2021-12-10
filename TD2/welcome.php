@@ -1,4 +1,5 @@
 <?php
+require '../utils.inc.php';
 session_start();
 start_page('session');
 if (isset($_SESSION['suid'])) {
