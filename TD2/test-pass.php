@@ -18,8 +18,8 @@ if (!empty($_POST)) {
             header('location: welcome.php');
         } else {
             start_page('erreur');
-            echo '<strong>logging ou mot de passe incorrect</strong>';
-            echo $login , $password;
+            echo '<strong>logging ou mot de passe incorrect</strong> , $login , $password';
+
         }
     }
 
