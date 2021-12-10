@@ -26,11 +26,7 @@ if (!empty($_POST)) {
 
         $query = "INSERT INTO user (date, email, id, state, password, phone,sex) VALUES ( NOW(),
         '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
-
-        $dbRow = mysqli_fetch_assoc($dbResult=connectDB('select * from user'));
-            echo $dbRow['id'] . '<br/>';
-            echo $dbRow['password'] . '<br/>';
-            echo '<br/><br/>';
+        connectDB($query);
 
 
     } else {
