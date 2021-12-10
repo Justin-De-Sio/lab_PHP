@@ -29,8 +29,7 @@ if (!empty($_POST)) {
 
         while ($dbRow = mysqli_fetch_assoc($dbResult=connectDB('select * from user'))) {
             echo $dbRow['id'] . '<br/>';
-            echo $dbRow['email'] . '<br/>';
-            echo date('d.m.Y', strtotime($dbRow['date'])) . '<br/>';
+            echo $dbRow['password'] . '<br/>';
             echo '<br/><br/>';
         }
 
