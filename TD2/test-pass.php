@@ -12,9 +12,10 @@ if (!empty($_POST)) {
         $dbRow = mysqli_fetch_assoc($dbResult);
         $loginBD = $dbRow['id'];
         $passwordBD = $dbRow['password'];
-
+        echo '<br>' . 'idBD : ' . $dbResult;
+        echo '<br>' . 'dbRow : ' .$dbRow;
         echo '<br>' . 'idBD : ' . $loginBD . '<br>' . ' mdpBD : ' . $passwordBD;
-        echo '<br>' . 'idBD : ' . $login . '<br>' . ' mdp : ' . $password;
+        echo '<br>' . 'id : ' . $login . '<br>' . ' mdp : ' . $password;
         if ($loginBD == $_POST['login'] && password_verify($_POST['password'], $passwordBD)) {
             session_start();
             $_SESSION['suid'] = session_id();
