@@ -4,8 +4,11 @@ if (!empty($_POST)) {
 
 
     $login = $_POST['login'];
+    $query = 'select * from superjustin_td_php.user where id=' . '\'' . $login . '\'';
+    $dbRow = mysqli_fetch_assoc($dbResult = connectDB($query ));
 
-    $dbRow = mysqli_fetch_assoc($dbResult = connectDB($query = 'select * from user where id=' . '\'' . $login . '\''));
+    $query = 'UPDATE superjustin_td_php.user t SET t.conexion_counter = t.conexion_counter + 1 WHERE t.id =' . '\'' . $login . '\'';
+    connectDB($query);
 
     if ($dbRow['id'] == $_POST['login'] && $_POST['password'] == $dbRow['password']) {
         session_start();
