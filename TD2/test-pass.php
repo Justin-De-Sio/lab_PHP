@@ -4,7 +4,6 @@ if (!empty($_POST)) {
     $login = $_POST['login'];
     $password = $_POST['password'];
 
-
     if (filter_input(INPUT_POST, 'login') && filter_input(INPUT_POST, 'password')) {
         $query = "SELECT ID, PASSWORD FROM user WHERE ID='$login'AND PASSWORD='$password'";
         $dbResult = connectDB($query);
@@ -22,3 +21,4 @@ if (!empty($_POST)) {
     }
 
 }
+var_dump($dbResult,$dbAssoc,$login,$password);
