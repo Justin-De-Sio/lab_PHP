@@ -9,8 +9,10 @@ if (!empty($_POST)) {
 
             $query = "SELECT ID, PASSWORD FROM user WHERE ID='$login'AND PASSWORD='$password'";
             $dbResult = connectDB($query);
-//            $dbRow = mysqli_fetch_assoc($dbResult);
-            if (!empty($dbResult)) {
+            $dbRow = mysqli_fetch_assoc($dbResult);
+            $loginBD = $dbRow['id'] ;
+            $login = $dbRow['password'] ;
+            if ($login == $_POST['login'] && password_verify($_POST['pwd'], $password)) {
                 session_start();
                 $_SESSION['suid'] = session_id();
                 header('location: welcome.php');
