@@ -1,8 +1,15 @@
 <?php
 require '../utils.inc.php';
-session_start();
 start_page('session');
-if (isset($_SESSION['suid'])) {
-    echo "L'authentification est validée";
+
+session_start();
+if(!isset($_SESSION['suid']))
+{
+    die('Erreur d\'authentification');
 }
+else
+{
+    echo 'bievenue';
+ }
+
 end_page();
