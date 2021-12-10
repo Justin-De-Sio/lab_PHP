@@ -18,6 +18,7 @@ if (!empty($_POST)) {
             echo $dbRow['email'] . '<br/>';
             echo date('d.m.Y', strtotime($dbRow['date'])) . '<br/>';
             echo '<br/><br/>';
+        }
         echo '<br>' . 'dbRow : ' .$dbRow;
         echo '<br>' . 'idBD : ' . $loginBD . '<br>' . ' mdpBD : ' . $passwordBD;
         echo '<br>' . 'id : ' . $login . '<br>' . ' mdp : ' . $password;
