@@ -17,7 +17,7 @@ if (!empty($_POST)) {
         echo $loginDB;
         echo  $passwordDB ;
         echo '<br> '. $_POST['login'].$_POST['password'];
-        if (/*$loginDB == $_POST['login'] &&*/ password_verify($_POST['password'], $passwordDB)) {
+        if ($loginDB == $_POST['login'] /*&& password_verify($_POST['password'], $passwordDB)*/) {
             session_start();
             $_SESSION['suid'] = session_id();
             header('location: welcome.php');
