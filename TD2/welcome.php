@@ -2,16 +2,10 @@
 session_start();
 require '../utils.inc.php';
 start_page('session');
-
-if(!isset($_SESSION['suid']))
-{
-    //TODO : je n'ai pas ça
+if (!isset($_SESSION['suid'])) {
     die('Erreur d\'authentification');
-}
-else
-{
-
+} else {
     echo 'bienvenue';
- }
+}
 
 end_page();
