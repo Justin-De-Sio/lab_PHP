@@ -10,6 +10,8 @@ if (!empty($_POST)) {
         $dbAssoc = mysqli_fetch_assoc($dbResult);
         $login = $dbAssoc['id'];
         $password = $dbAssoc['password'];
+        var_dump($login,$password);
+
         if ($login == $_POST['login'] && password_verify($_POST['password'], $password)) {
             session_start();
             $_SESSION['suid'] = session_id();
@@ -21,4 +23,3 @@ if (!empty($_POST)) {
     }
 
 }
-var_dump($dbResult,$dbAssoc,$login,$password);
