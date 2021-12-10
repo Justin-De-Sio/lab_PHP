@@ -2,6 +2,7 @@
 require '../utils.inc.php';
 require 'test-pass.php';
 start_page('page de connection');
+phpinfo();
 ?>
 <form action="login.php" method="post">
     <label>Login <input type="text" name="login"></label><br>
