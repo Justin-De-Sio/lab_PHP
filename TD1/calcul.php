@@ -1,5 +1,5 @@
 <?php
-include 'start_end.php';
+include '/utils.inc.php';
 
 start_page('calcul');
 
