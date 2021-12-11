@@ -32,7 +32,7 @@ function result($op,$op1,$op2){
         exit();
 
 }
-
+echo $action;
 ?>
 <h1 ><?php echo $op1.' '.$action.' ' .$op2. ' = '.result($action,$op1,$op2) ?></h1>
 
