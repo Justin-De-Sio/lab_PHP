@@ -7,7 +7,7 @@ echo $_SESSION['error'];
 <h1>Login page</h1>
 <form action="login.php" method="post">
     <div class="mb-3">
-        <label class="form-label">Login <input type="text" name="login"></label>
+        <label class="form-label">Login <input class="form-control" type="text" name="login"></label>
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
