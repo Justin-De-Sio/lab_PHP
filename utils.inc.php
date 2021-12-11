@@ -14,7 +14,7 @@ function start_page($titre)
 <?php
 $index = '/index.php';
 $rub1 = 'calculator';
-$rub1addr = 'TD1/calculator.php';
+$rub1addr = '/TD1/calculator.php';
 
 $rub2form = 'Form';
 $rub2formAddr = '/TD2/register/form.php';

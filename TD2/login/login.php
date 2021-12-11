@@ -6,10 +6,17 @@ echo $_SESSION['error'];
 ?>
 <h1>Login page</h1>
 <form action="login.php" method="post">
-    <label>Login <input type="text" name="login"></label><br>
-    <label>password <input type="password" name="password"></label>
-    <button type="submit">ok</button>
+    <div class="mb-3">
+        <label class="form-label">Login <input type="text" name="login"></label>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password <input class="form-control" type="password"
+                                                                              name="password"></label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
 <?php
 end_page();
 ?>
