@@ -1,12 +1,12 @@
 <?php
-include 'start_end.php';
+include 'utils.inc.php';
 start_page('calculator');
 ?>
 <?php
 $operateurs = '+-*/';
 ?>
     <h2 >calculator</h2>
-    <form action="../TD2/register/calcul.php" method="post">
+    <form action="calculates.php" method="post">
         <label>
 
             <input type="number" name="op1"><br>
