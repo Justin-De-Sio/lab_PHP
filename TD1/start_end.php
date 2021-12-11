@@ -20,6 +20,7 @@ $rub2formAddr = '/TD2/register/form.php';
 $rub2signIn = 'Sign in';
 $rub2signInAddr = '/TD2/login/login.php';
 
+
 ?>
 
 <h1>Sommaire</h1>
