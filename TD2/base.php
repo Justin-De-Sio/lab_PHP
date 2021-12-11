@@ -1,7 +1,6 @@
 <?php
 function connectDB($query){
-    $dbLink = mysqli_connect('mysql-superjustin.alwaysdata.net', '250372', 'U1234567890U',
-        'superjustin_td_php')
+    $dbLink = mysqli_connect('mysql-superjustin.alwaysdata.net', '250372', 'U1234567890U')
     or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
 
     mysqli_select_db($dbLink, 'superjustin_td_php')
