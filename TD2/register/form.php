@@ -3,7 +3,7 @@ require '../../utils.inc.php';
 require 'data-processing.php';
 start_page('formulaire');
 ?>
-
+<h1>register page</h1>
 <form action="form.php" method="post">
     <div>
         <label for="id">Identifiant :</label>
