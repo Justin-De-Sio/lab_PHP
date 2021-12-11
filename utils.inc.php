@@ -35,8 +35,8 @@ $rub2signInAddr = '/TD2/login/login.php';
         </ul>
 
         <div class="col-md-3 text-end">
-            <button type="button" onclick="<?php echo $rub2signInAddr ?>" class="btn btn-outline-primary me-2">Login</button>
-            <button type="button" href="<?php echo $rub2formAddr ?>"  class="btn btn-primary">Sign-up</button>
+            <a class="btn btn-primary" href="<?php echo $rub2signInAddr ?>" role="button">Login</a>
+            <a class="btn btn-primary" href="<?php echo $rub2formAddr ?>" role="button">Sign-up</a>
         </div>
     </header>
 </div>
