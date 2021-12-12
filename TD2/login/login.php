@@ -5,7 +5,7 @@ start_page('page de connection');
 echo $_SESSION['error'];
 ?>
 <h1>Login page</h1>
-<form action="login.php" method="post" data-form-type="login">
+<form action="login.php" method="post" data-form-type="login" class="form">
     <div class="mb-3">
         <label class="form-label">Login <input class="form-control" type="text" name="login"></label>
     </div>

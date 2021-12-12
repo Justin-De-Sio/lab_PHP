@@ -4,46 +4,47 @@ require 'data-processing.php';
 start_page('formulaire');
 ?>
 <h1>register page</h1>
-<form action="form.php" method="post">
-    <div>
-        <label for="id" class="form-label">Identifiant :</label>
-        <input type="number" id="id" name="user_name" class="form-control">
+<form action="form.php" method="post" data-form-type="re">
+    <div class="mb-3">
+        <label for="id" class="form-label">Identifiant :input type="number" id="id" name="user_name"
+            class="form-control"></label>
+        <
     </div>
-    <div>
-        <label for="Sex" class="form-label">Civilité : </label>
-        <select name="user_sex" id="Sex">
-            <option value="">--Please choose an option--</option>
-            <option value="Homme">Homme</option>
-            <option value="Femmme">Femme</option>
-        </select>
+    <div class="mb-3">
+        <label for="Sex" class="form-label">Civilité : <select name="user_sex" id="Sex">
+                <option value="">--Please choose an option--</option>
+                <option value="Homme">Homme</option>
+                <option value="Femmme">Femme</option>
+            </select></label>
 
 
+
     </div>
     <div class="mb-3">
-        <label for="email" class="form-label">e-mail: </label>
-        <input type="text" id="email" name="user_email" class="form-control">
+        <label for="email" class="form-label">e-mail: <input type="text" id="email" name="user_email" class="form-control"></label>
+
     </div>
     <div class="mb-3">
-        <label for="password" class="form-label">Mot de passe</label>
-        <input type="password" id="password" name="user_password" class="form-control">
+        <label for="password" class="form-label">Mot de passe <input type="password" id="password" name="user_password" class="form-control"></label>
+
     </div>
     <div class="mb-3">
-        <label for="vPassword" class="form-label">Vérification de Mot de passe</label>
-        <input type="password" id="vPassword" name="user_password_verification" class="form-control">
-    </div >
-    <div class="mb-3">
-        <label for="phone" class="form-label" >Téléphone</label>
-        <input type="text" id="phone" name="phone" class="form-control">
+        <label for="vPassword" class="form-label">Vérification de Mot de passe<input type="password" id="vPassword" name="user_password_verification" class="form-control"></label>
+
     </div>
     <div class="mb-3">
-        <label for="state " class="form-label">Pays</label>
-        <?php  include 'states.php';?>
+        <label for="phone" class="form-label">Téléphone <input type="text" id="phone" name="phone" class="form-control"></label>
+
+    </div>
+    <div class="mb-3">
+        <label for="state " class="form-label">Pays  <?php include 'states.php'; ?></label>
+
     </div>
     <div class="form-check">
-        <label for="Conditions générales" class="form-check-label">Conditions générales</label>
-        <input type="checkbox" id="Conditions générales" name="cgu_check"  class="form-check-input">
+        <label for="Conditions générales" class="form-check-label">Conditions générales <input type="checkbox" id="Conditions générales" name="cgu_check" class="form-check-input"></label>
+
     </div>
-    <div class="button mb-3" >
+    <div class="button mb-3">
         <button type="submit" value="mailer" name="action" class="btn btn-primary">action</button>
         <button type="submit" value="rec" name="action" class="btn btn-secondary">action2</button>
     </div>
