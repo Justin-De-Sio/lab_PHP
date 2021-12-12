@@ -6,7 +6,8 @@ class Library
     private string $name;
     private string $address;
     private int $max;
-    private array $books;
+    private array $books= [];
+
 
     /**
      * @param string $name
@@ -23,7 +24,7 @@ class Library
 
     public function addBook(Book $book)
     {
-        if (count($this->books) >= self::MAX_BOOKS) {
+        if (count($this->books) <= self::MAX_BOOKS) {
             array_push($this->books, $book);
         } else {
             echo "The library is full";
