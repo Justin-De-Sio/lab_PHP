@@ -88,10 +88,10 @@ class Book
     public function __toString(): string
     {
         return
-            'Title : ' . $this->title . '\n' .
-            'Number of pages : ' . $this->pageNb . '\n' .
-            'editor : ' . $this->editor . '\n' .
-            'author : ' . $this->author . '\n';
+            'Title : ' . $this->title . "\n" .
+            'Number of pages : ' . $this->pageNb . "\n" .
+            'editor : ' . $this->editor . "\n" .
+            'author : ' . $this->author . "\n";
 
     }
 }
