@@ -33,13 +33,13 @@ start_page('formulaire');
                                                                          name="user_password"
                                                                          class="form-control"></label>
 
-        </div>
+<!--        </div>
         <div class="mb-3">
             <label for="vPassword" class="form-label">Vérification de Mot de passe<input type="password" id="vPassword"
                                                                                          name="user_password_verification"
                                                                                          class="form-control"></label>
 
-        </div>
+        </div>-->
         <div class="mb-3">
             <label for="phone" class="form-label">Téléphone <input type="text" id="phone" name="phone"
                                                                    class="form-control"></label>

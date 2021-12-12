@@ -5,6 +5,7 @@ start_page('calculator');
 <?php
 $operateurs = '+-*/';
 ?>
+    <div class="mx-auto" style="width: 20em;">
     <h2 >calculator</h2>
     <form action="calculates.php" method="get">
         <label>
@@ -24,6 +25,7 @@ $operateurs = '+-*/';
         </label>
 
     </form>
+    </div>
 <?php
 
 ?>
