@@ -1,5 +1,5 @@
 <label>
-    <select name="pays">
+    <select class="form-select" name="pays">
         <option value="France" selected="selected">France </option>
 
         <option value="Afghanistan">Afghanistan </option>
