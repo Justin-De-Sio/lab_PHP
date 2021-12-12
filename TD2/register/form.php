@@ -7,7 +7,7 @@ start_page('formulaire');
 <form action="form.php" method="post">
     <div>
         <label for="id">Identifiant :</label>
-        <input type="text" id="id" name="user_name">
+        <input type="number" id="id" name="user_name">
     </div>
     <div>
         <label for="Sex">Civilité :</label>
