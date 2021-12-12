@@ -2,7 +2,7 @@
 
 class Library
 {
-    private const MAX_BOOKS= 100;
+    private const MAX_BOOKS = 100;
     private string $name;
     private string $address;
     private int $max;
@@ -14,20 +14,35 @@ class Library
      * @param int $max
      * @param array $books
      */
-    public function __construct(string $name, string $address, int $max, array $books)
+    public function __construct(string $name, string $address, int $max)
     {
         $this->name = $name;
         $this->address = $address;
         $this->max = $max;
-        $this->books = $books;
     }
 
-    public function addBook(Book $book){
-        $this->books.array_push($book);
+    public function addBook(Book $book)
+    {
+        if (count($this->books) >= self::MAX_BOOKS) {
+            array_push($this->books, $book);
+        } else {
+            echo "The library is full";
+        }
     }
 
+    public function __toString(): string
+    {
 
 
+        foreach ($this->books as &$book){
+            echo $book;
+        }
+
+        return
+            'name : ' . $this->name . '<br>' .
+            'address: ' . $this->aaddress . '<br>' .
+            'max : ' . $this->max . '<br>';
 
 
+    }
 }
