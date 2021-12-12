@@ -34,15 +34,20 @@ class Library
     {
 
 
-        foreach ($this->books as &$book){
-            echo $book;
-        }
-
         return
             'name : ' . $this->name . '<br>' .
-            'address: ' . $this->aaddress . '<br>' .
-            'max : ' . $this->max . '<br>';
+            'address: ' . $this->address . '<br>' .
+            'max : ' . $this->max . '<br>' . $this->displayBooks();
 
 
+    }
+
+    public function displayBooks()
+    {
+        {
+            foreach ($this->books as &$book) {
+                echo $book;
+            }
+        }
     }
 }
