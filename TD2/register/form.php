@@ -13,11 +13,13 @@ start_page('formulaire');
 
         </div>
         <div class="mb-3">
-            <label for="Sex" class="form-label">Civilité : <select name="user_sex" id="Sex">
+            <label for="Sex" class="form-label">Civilité :
+                <select name="user_sex" id="Sex" class="form-select">
                     <option value="">--Please choose an option--</option>
                     <option value="Homme">Homme</option>
                     <option value="Femmme">Femme</option>
-                </select></label>
+                </select>
+            </label>
 
 
         </div>
