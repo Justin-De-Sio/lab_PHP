@@ -95,3 +95,6 @@ class Book
 
     }
 }
+
+$livre = new Book('Factulness','Hans Rosling','Flammarion',400);
+echo $livre;
