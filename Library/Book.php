@@ -88,13 +88,13 @@ class Book
     public function __toString(): string
     {
         return
-            'Title : ' . $this->title . "\n" .
-            'Number of pages : ' . $this->pageNb . "\n" .
-            'editor : ' . $this->editor . "\n" .
-            'author : ' . $this->author . "\n";
+            'Title : ' . $this->title . '<br>' .
+            'Number of pages : ' . $this->pageNb . '<br>' .
+            'editor : ' . $this->editor . '<br>' .
+            'author : ' . $this->author . '<br>';
 
     }
 }
 
-$livre = new Book('Factulness','Hans Rosling','Flammarion',400);
+$livre = new Book('Factulness', 'Hans Rosling', 'Flammarion', 400);
 echo $livre;
