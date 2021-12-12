@@ -23,27 +23,27 @@ start_page('formulaire');
         <label for="email" class="form-label">e-mail: </label>
         <input type="text" id="email" name="user_email" class="form-control">
     </div>
-    <div>
+    <div class="mb-3">
         <label for="password" class="form-label">Mot de passe</label>
         <input type="password" id="password" name="user_password" class="form-control">
     </div>
-    <div>
+    <div class="mb-3">
         <label for="vPassword" class="form-label">Vérification de Mot de passe</label>
         <input type="password" id="vPassword" name="user_password_verification" class="form-control">
-    </div>
-    <div>
+    </div >
+    <div class="mb-3">
         <label for="phone" class="form-label" >Téléphone</label>
         <input type="text" id="phone" name="phone" class="form-control">
     </div>
-    <div>
+    <div class="mb-3">
         <label for="state " class="form-label">Pays</label>
         <?php  include 'states.php';?>
     </div>
-    <div>
+    <div class="mb-3">
         <label for="Conditions générales" class="form-label">Conditions générales</label>
         <input type="checkbox" id="Conditions générales" name="cgu_check" class="form-control">
     </div>
-    <div class="button">
+    <div class="button mb-3" >
         <button type="submit" value="mailer" name="action">action</button>
         <button type="submit" value="rec" name="action">action2</button>
     </div>
