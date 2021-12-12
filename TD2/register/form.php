@@ -10,7 +10,7 @@ start_page('formulaire');
         <input type="number" id="id" name="user_name" class="form-control">
     </div>
     <div>
-        <label for="Sex">Civilité : class="form-label"</label>
+        <label for="Sex" class="form-label">Civilité : </label>
         <select name="user_sex" id="Sex">
             <option value="">--Please choose an option--</option>
             <option value="Homme">Homme</option>
@@ -20,7 +20,7 @@ start_page('formulaire');
 
     </div>
     <div>
-        <label for="email">e-mail: class="form-label"</label>
+        <label for="email" class="form-label">e-mail: </label>
         <input type="text" id="email" name="user_email" class="form-control">
     </div>
     <div>
