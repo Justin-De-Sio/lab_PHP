@@ -33,33 +33,27 @@ start_page('formulaire');
                                                                          name="user_password"
                                                                          class="form-control"></label>
 
-<!--        </div>
-        <div class="mb-3">
-            <label for="vPassword" class="form-label">Vérification de Mot de passe<input type="password" id="vPassword"
-                                                                                         name="user_password_verification"
-                                                                                         class="form-control"></label>
 
-        </div>-->
-        <div class="mb-3">
-            <label for="phone" class="form-label">Téléphone <input type="text" id="phone" name="phone"
-                                                                   class="form-control"></label>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Téléphone <input type="text" id="phone" name="phone"
+                                                                       class="form-control"></label>
 
-        </div>
-        <div class="mb-3">
-            <label for="state " class="form-label">Pays <?php include 'states.php'; ?></label>
+            </div>
+            <div class="mb-3">
+                <label for="state " class="form-label">Pays <?php include 'states.php'; ?></label>
 
-        </div>
-        <div class="form-check">
-            <label for="Conditions générales" class="form-check-label">Conditions générales <input type="checkbox"
-                                                                                                   id="Conditions générales"
-                                                                                                   name="cgu_check"
-                                                                                                   class="form-check-input"></label>
+            </div>
+            <div class="form-check">
+                <label for="Conditions générales" class="form-check-label">Conditions générales <input type="checkbox"
+                                                                                                       id="Conditions générales"
+                                                                                                       name="cgu_check"
+                                                                                                       class="form-check-input"></label>
 
-        </div>
-        <div class="button mb-3">
-            <button type="submit" value="mailer" name="action" class="btn btn-primary">action</button>
-            <button type="submit" value="rec" name="action" class="btn btn-secondary">action2</button>
-        </div>
+            </div>
+            <div class="button mb-3">
+                <button type="submit" value="mailer" name="action" class="btn btn-primary">action</button>
+                <button type="submit" value="rec" name="action" class="btn btn-secondary">action2</button>
+            </div>
     </form>
 </div>
 <?php
