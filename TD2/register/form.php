@@ -4,7 +4,7 @@ require 'data-processing.php';
 start_page('formulaire');
 ?>
 <h1>register page</h1>
-<form action="form.php" method="post" data-form-type="re">
+<form action="form.php" method="post" class="mx-auto" style="width: 20em;">
     <div class="mb-3">
         <label for="id" class="form-label">Identifiant :<input type="number" id="id" name="user_name"
                                                                class="form-control"></label>
