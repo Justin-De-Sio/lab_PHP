@@ -35,8 +35,6 @@ $rub2signInAddr = '/TD2/login/login.php';
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="<?php echo $index ?>" class="nav-link px-2 link-secondary">Home</a></li>
             <li><a href="<?php echo $rub1addr ?>" class="nav-link px-2 link-dark"><?php echo $rub1 ?></a></li>
-            <li><a href="<?php echo $rub2formAddr ?>" class="nav-link px-2 link-dark"><?php echo $rub2form ?></a></li>
-            <li><a href="<?php echo $rub2signInAddr ?>" class="nav-link px-2 link-dark"><?php echo $rub2signIn ?></a>
             </li>
 
         </ul>
