@@ -39,13 +39,13 @@ start_page('formulaire');
         <label for="state " class="form-label">Pays</label>
         <?php  include 'states.php';?>
     </div>
-    <div class="mb-3">
-        <label for="Conditions générales" class="form-label">Conditions générales</label>
-        <input type="checkbox" id="Conditions générales" name="cgu_check" class="form-control">
+    <div class="form-check">
+        <label for="Conditions générales" class="form-check-label">Conditions générales</label>
+        <input type="checkbox" id="Conditions générales" name="cgu_check"  class="form-check-input">
     </div>
     <div class="button mb-3" >
-        <button type="submit" value="mailer" name="action">action</button>
-        <button type="submit" value="rec" name="action">action2</button>
+        <button type="submit" value="mailer" name="action" class="btn btn-primary">action</button>
+        <button type="submit" value="rec" name="action" class="btn btn-secondary">action2</button>
     </div>
 </form>
 
