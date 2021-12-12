@@ -20,8 +20,8 @@ start_page('formulaire');
 
     </div>
     <div>
-        <label for="email" class="form-label">e-mail: </label>
-        <input type="text" id="email" name="user_email" class="form-control">
+        <label for="email" class="form-label">e-mail: <input type="text" id="email" name="user_email" class="form-control"></label>
+
     </div>
     <div>
         <label for="password" class="form-label">Mot de passe</label>
