@@ -1,4 +1,5 @@
-<label>
+<?php
+echo '
     <select class="form-select" name="pays">
         <option value="France" selected="selected">France </option>
 
@@ -256,4 +257,4 @@
         <option value="Zimbabwe">Zimbabwe </option>
 
     </select>
-</label>
+';
