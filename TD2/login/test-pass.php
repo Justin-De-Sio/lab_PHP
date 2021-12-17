@@ -2,7 +2,6 @@
 require '../base.php';
 if (!empty($_POST)) {
 
-
     $login = $_POST['login'];
 
     $query = 'SELECT id,email,password FROM superjustin_td_php.user WHERE email=' . '\'' . $login . '\'';
@@ -20,7 +19,7 @@ if (!empty($_POST)) {
     } else {
         $_SESSION['error'] = 'Identifiants incorrects, veuillez vérifier votre email et mot de passe. ';
         echo  $_SESSION['error'];
-        header('location: login.php');
+//        header('location: login.php');
     }
 
 }
