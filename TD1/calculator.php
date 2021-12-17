@@ -1,0 +1,34 @@
+<?php
+include '../utils.inc.php';
+start_page('calculator');
+?>
+<?php
+$operateurs = '+-*/';
+?>
+    <div class="mx-auto" style="width: 20em;">
+    <h2 >calculator</h2>
+    <form action="calculates.php" method="get">
+        <label>
+
+            <input type="number" name="op1"><br>
+            <input type="number" name="op2"><br>
+            <?php
+            for ($cpt = 0; $cpt < 4; ++$cpt) {
+                echo '<input ';
+                if ($cpt == 0) {
+                    echo 'checked="checked"';
+                }
+                echo 'type="submit" name="action" value="' . $operateurs[$cpt] . '"/>' . "\n";
+            }
+            ?>
+
+        </label>
+
+    </form>
+    </div>
+<?php
+
+?>
+
+<?php
+end_page();
