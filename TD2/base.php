@@ -19,3 +19,7 @@ function connectDB($query)
 }
 
 
+//$ok = connectDB("SELECT ID, PASSWORD FROM user WHERE ID='123'AND PASSWORD='oui';");
+//foreach ($ok as $i){
+//    echo $i['ID'];
+//}
