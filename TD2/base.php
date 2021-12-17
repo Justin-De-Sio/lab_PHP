@@ -1,25 +1,19 @@
 <?php
-function connectDB($query)
+function connectDB()
 {
 
-    $user = '250372'    ;
-    $pass= 'U1234567890U';
+    $user = '250372';
+    $pass = 'U1234567890U';
     try {
-        $db = new PDO('mysql:host=mysql-superjustin.alwaysdata.net;dbname=superjustin_td_php', $user, $pass);
+        $db = new PDO('mysql:host=mysql-superjustin.alwaysdata.net;dbname=superjustin_td_php', $user, $pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],);
 
     } catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
     }
 
-    $recipesStatement = $db->prepare($query);
-    $recipesStatement->execute();
-    return $recipesStatement->fetchAll();
+    return $db ;
 
 
 }
 
 
-//$ok = connectDB("SELECT ID, PASSWORD FROM user WHERE ID='123'AND PASSWORD='oui';");
-//foreach ($ok as $i){
-//    echo $i['ID'];
-//}

@@ -13,7 +13,7 @@ if (!empty($_POST)) {
     if ($action == 'mailer') {
 
 
-        $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
+      /*  $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
         $message .= 'Email : ' . $email . PHP_EOL;
         $message .= 'Mot de passe : ' . $password . PHP_EOL;
 
@@ -22,11 +22,22 @@ if (!empty($_POST)) {
 
 
         mail($to, $subject, $message);
-        echo '<br/>email bien envoyé !<br/>';
+        echo '<br/>email bien envoyé !<br/>';*/
+        $query = 'INSERT INTO superjustin_td_php.user (date,id, email, state, password, phone,sex) VALUES ( NOW(),:id,
+        :email , :state ,:password , :phone ,:sex )';
+        connectDB();
 
-        $query = "INSERT INTO superjustin_td_php.user (date, email, id, state, password, phone,sex) VALUES ( NOW(),
-        '$email', '$id' , '$state' , '$password' , '$phone' ,'$sex' )";
-        connectDB($query);
+        $PDOStatement = connectDB()->prepare($query);
+        $PDOStatement->execute([
+            'email'=>$email,
+            'id'=> $id,
+            'state'=>$state,
+            'password'=>$password,
+            'phone'=>$phone,
+            'sex'=>$sex,
+        ]);
+
+        echo 'ok';
     } elseif ($action == 'rec') {
         $file = 'data.txt';
         if (!($file = fopen($file, 'a+'))) {
