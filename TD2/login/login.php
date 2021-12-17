@@ -2,7 +2,6 @@
 require '../../utils.inc.php';
 require 'test-pass.php';
 start_page('page de connection');
-echo $_SESSION['error'];
 ?>
 <div class="mx-auto" style="width: 20em;">
     <h1>Login page</h1>
