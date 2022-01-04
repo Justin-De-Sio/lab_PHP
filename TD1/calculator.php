@@ -1,13 +1,13 @@
 <?php
-include 'start_end.php';
+include '../utils.inc.php';
 start_page('calculator');
 ?>
 <?php
 $operateurs = '+-*/';
 ?>
-
+    <div class="mx-auto" style="width: 20em;">
     <h2 >calculator</h2>
-    <form action="calcul.php" method="GET">
+    <form action="calculates.php" method="get">
         <label>
 
             <input type="number" name="op1"><br>
@@ -25,6 +25,7 @@ $operateurs = '+-*/';
         </label>
 
     </form>
+    </div>
 <?php
 
 ?>
